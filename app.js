@@ -40,5 +40,21 @@
     // 5. Write a program that shows the message “First fifteen
     // days of the month” if the date is less than 16th of the month
     // else shows “Last days of the month”.
-    
+
     //solution:
+    var currentDate = new Date();
+    var date = currentDate.getDate();
+    // console.log(date); 
+    // console.log(typeof date); // this will return a Date in a Number form
+    // if(date<16){
+    //     alert("“First fifteen days of the month”");
+    // }
+    // else{
+    //     alert("“Last days of the month”");
+    // }
+
+
+//6. Write a program that determines the minutes since
+// midnight, Jan. 1, 1970 and assigns it to a variable that
+// hasn't been declared beforehand. Use any variable you like
+// to represent the Date object
