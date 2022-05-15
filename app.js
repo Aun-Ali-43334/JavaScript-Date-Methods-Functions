@@ -66,3 +66,24 @@
 // console.log("Ellapse Milliseconds since Jan 1 1970 : ",currentDate.getTime());
 // var min = currentDate.getTime();
 // console.log("Ellapse minutes since Jan 1 1970 : ",min/(1000*60));
+
+
+// 7. Write a program that tests whether it's before noon and
+// alert “Its AM” else “its PM”.
+//solution:
+
+// var currentDate = new Date();
+// var getHour = currentDate.getHours();
+// //.getHours() gives us the Hours b/w 0-to-23 in Number Data-Type
+// console.log(getHour);
+// if(getHour>=0 && getHour<=12){
+//     alert("Its AM")
+// }
+// else if(getHour>12 && getHour<23){
+//     alert("Its PM")
+// }
+
+
+// 8. Write a program that creates a Date object for the last day
+// of the last month of 2020 and assigns it to variable named
+// laterDate.
