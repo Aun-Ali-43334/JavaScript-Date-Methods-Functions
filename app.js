@@ -87,3 +87,64 @@
 // 8. Write a program that creates a Date object for the last day
 // of the last month of 2020 and assigns it to variable named
 // laterDate.
+
+//solution:
+// var latterDate = new Date("Dec 31, 2022 15:15:51");
+// console.log("Later Date : ",latterDate);
+
+
+
+
+// 9. Create a date object of the starting date of this Ramadan
+// and alert the number of days past since 1st Ramadan?
+// Note: 1st Ramadan was on June 18, 2015
+
+//solution:
+// var currentRamazan = new Date("April 04, 2022").getTime()/(1000*60*60*24);
+// currentRamazan = Math.floor(currentRamazan);
+// console.log("Total Days from 1 Jan 1970 to this Ramzan 2022: ",currentRamazan);
+
+// var pastRamazan = new Date("June 18, 2015").getTime()/(1000*60*60*24);
+// pastRamazan = Math.floor(pastRamazan);
+
+// console.log("Total Days from 1 Jan 1970 to this Ramzan 2015: ",pastRamazan);
+
+// var diff = currentRamazan - pastRamazan;
+// diff = diff;
+// console.log((diff));
+
+
+
+// 10. Write a program that displays in your browser the
+// seconds that elapsed between the reference date and the
+// beginning of 2015.
+
+//solution
+// var seconds = new Date().getTime()/(1000) - new Date("Jan 01, 2015 22:50:16").getTime()/(1000);
+// console.log(Math.floor(seconds));
+
+
+// 11. Create a Date object for the current date and time.
+// Extract the hours, reset the date object an hour ahead and
+// finally display the date object in your browser.
+
+//solution:
+// var date =  new Date();
+// console.log("Current Date = ",date);
+// var date2 = new Date("May 15, 2022 20:26:00");
+// console.log("One Hour Ahead = ",date2);
+
+
+// 12. Write a program that creates a date object and show the
+// date in an alert box that is reset to 100 years back?
+
+//solution:
+// var currentDate = new Date();
+// var date = new Date("15 May, 1922");
+// alert("Current Date is = "+currentDate +"\n100 Years back = "+date);
+
+
+// 13. Write a program to ask the user about his age. Calculate
+// and show his birth year in your browser
+
+//solution:
