@@ -42,8 +42,8 @@
     // else shows “Last days of the month”.
 
     //solution:
-    var currentDate = new Date();
-    var date = currentDate.getDate();
+    // var currentDate = new Date();
+    // var date = currentDate.getDate();
     // console.log(date); 
     // console.log(typeof date); // this will return a Date in a Number form
     // if(date<16){
@@ -58,3 +58,11 @@
 // midnight, Jan. 1, 1970 and assigns it to a variable that
 // hasn't been declared beforehand. Use any variable you like
 // to represent the Date object
+
+//solution:
+
+// var currentDate = new Date();
+// console.log(currentDate);
+// console.log("Ellapse Milliseconds since Jan 1 1970 : ",currentDate.getTime());
+// var min = currentDate.getTime();
+// console.log("Ellapse minutes since Jan 1 1970 : ",min/(1000*60));
