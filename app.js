@@ -1,3 +1,9 @@
+// ------------------------------Assignment # 35-38------------------------------
+
+
+
+
+
 //alert("Hello Class");
 
 
@@ -175,24 +181,86 @@
 // & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
 
 //solution:
-var customerName = "Aun Ali";
-var date = new Date();
-var monthArray = ["Jan","Feb","March","April","May","Jun","July","Aug","Sep","Oct","Nov","Dec"];
-var month = date.getMonth();
+// var customerName = "Aun Ali";
+// var date = new Date();
+// var monthArray = ["Jan","Feb","March","April","May","Jun","July","Aug","Sep","Oct","Nov","Dec"];
+// var month = date.getMonth();
 
-console.log(monthArray[month]);
-var chargesPerUnit = 16;
-var numberOfUnits = 410;
+// console.log(monthArray[month]);
+// var chargesPerUnit = 16;
+// var numberOfUnits = 410;
 
-var netAmount = chargesPerUnit * numberOfUnits;
-var fine = 350;
-var netAmountAfterFine = netAmount + fine;
+// var netAmount = chargesPerUnit * numberOfUnits;
+// var fine = 350;
+// var netAmountAfterFine = netAmount + fine;
 
-document.write("<p>Customer Name  : "+"<strong>"+customerName+"</strong></p>");
-document.write("<p>Month "+"<strong>"+monthArray+"</strong></p>");
-document.write("<p>Number of Unit : "+"<strong>"+numberOfUnits+"</strong></p>");
-document.write("<p>Chare Per Unit : "+"<strong>"+chargesPerUnit+"</strong></p>")
-document.write("<br />");
+// document.write("<p>Customer Name  : "+"<strong>"+customerName+"</strong></p>");
+// document.write("<p>Month "+"<strong>"+monthArray+"</strong></p>");
+// document.write("<p>Number of Unit : "+"<strong>"+numberOfUnits+"</strong></p>");
+// document.write("<p>Chare Per Unit : "+"<strong>"+chargesPerUnit+"</strong></p>")
+// document.write("<br />");
 
-document.write("<p>Net Amount (within Due Date) :"+"<strong>"+netAmount+"</strong> </p>");
-document.write("<p>Gross Amount Payable (after Due Date) : "+"<strong>"+netAmountAfterFine+"</strong></p>");
+// document.write("<p>Net Amount (within Due Date) :"+"<strong>"+netAmount+"</strong> </p>");
+// document.write("<p>Gross Amount Payable (after Due Date) : "+"<strong>"+netAmountAfterFine+"</strong></p>");
+
+
+
+
+// ----------------------   Assignment # 35-38------------------------------
+// ------------------------------FUNCTION------------------------------
+
+// 1. Write a function that displays current date & time in your browser.
+//solution:
+// var date =  new Date();
+// console.log(date);
+// document.write(date)
+
+// 2. Write a function that takes first & last name and then it greets the user using his full name.
+//solution:
+// function greet(fName, lName){
+// console.log("Good Morning "+fName +" "+lName);
+// }
+// var fName = prompt("Enter first Name");
+// var lName = prompt("Enter last Name");
+// greet(fName,lName);
+
+
+
+// 3. Write a function that adds two numbers (input by user) and returns the sum of two numbers.
+//solution:
+// function add(num1 , num2){
+//     console.log(num1 + num2);
+// }
+
+// var Number1 = +prompt("Enter first Number");
+// var Number2 = +prompt("Enter last Number");
+// add(Number1,Number2);
+
+
+// 5. Write a function that squares its argument
+//solution:
+
+// function sqrt(num1){
+//     console.log(Math.pow(num1,2));
+// }
+// var numInput = +prompt("Enter a Numebr")
+// sqrt(numInput);
+
+
+
+// 6. Write a function that computes factorial of a number.
+//solution:
+
+// 7. Write a function that take start and end number as inputs & display counting in your browser.
+//solution:
+
+// var startNumber = +prompt("Enter Strating Number");
+// var EndNumber = +prompt("Enter Ending Number");
+
+// function loop(Strating, Ending){
+//     for(i=startNumber;i<=EndNumber;i++){
+//         document.write(i+"<br /> ");
+//     }
+// }
+
+// loop(startNumber, EndNumber);
