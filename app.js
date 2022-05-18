@@ -148,3 +148,51 @@
 // and show his birth year in your browser
 
 //solution:
+// var ageInput = +prompt("");
+// // console.log(ageInput);
+
+// var date = new Date();
+// var year = date.getFullYear();
+// // console.log(year);
+
+// var DOB = year - ageInput;
+// console.log(DOB);
+
+
+
+// 14. Write a program to generate your K-Electric bill in your
+// browser. All the amounts should be rounded off to 2 
+// decimal places. Display the following fields:
+// a. Customer Name
+// b. Current Month
+// c. Number of units
+// d. Charges per unit
+// e. Net Amount Payable (within Due Date)
+// f. Late Payment Surcharge
+// g. Gross Amount Payable (after Due Date)
+// Where,
+// Net Amount Payable (within Due Date) = Number of units * Charges per unit
+// & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
+
+//solution:
+var customerName = "Aun Ali";
+var date = new Date();
+var monthArray = ["Jan","Feb","March","April","May","Jun","July","Aug","Sep","Oct","Nov","Dec"];
+var month = date.getMonth();
+
+console.log(monthArray[month]);
+var chargesPerUnit = 16;
+var numberOfUnits = 410;
+
+var netAmount = chargesPerUnit * numberOfUnits;
+var fine = 350;
+var netAmountAfterFine = netAmount + fine;
+
+document.write("<p>Customer Name  : "+"<strong>"+customerName+"</strong></p>");
+document.write("<p>Month "+"<strong>"+monthArray+"</strong></p>");
+document.write("<p>Number of Unit : "+"<strong>"+numberOfUnits+"</strong></p>");
+document.write("<p>Chare Per Unit : "+"<strong>"+chargesPerUnit+"</strong></p>")
+document.write("<br />");
+
+document.write("<p>Net Amount (within Due Date) :"+"<strong>"+netAmount+"</strong> </p>");
+document.write("<p>Gross Amount Payable (after Due Date) : "+"<strong>"+netAmountAfterFine+"</strong></p>");
