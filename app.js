@@ -40,24 +40,24 @@
 // var getDay = date.getDay();
 // console.log(getDay);
 // if(getDay === 0 || getDate === 1){
-    //     alert("Its Fun Day !")
-    // }
-    
-    // 5. Write a program that shows the message “First fifteen
-    // days of the month” if the date is less than 16th of the month
-    // else shows “Last days of the month”.
+//     alert("Its Fun Day !")
+// }
 
-    //solution:
-    // var currentDate = new Date();
-    // var date = currentDate.getDate();
-    // console.log(date); 
-    // console.log(typeof date); // this will return a Date in a Number form
-    // if(date<16){
-    //     alert("“First fifteen days of the month”");
-    // }
-    // else{
-    //     alert("“Last days of the month”");
-    // }
+// 5. Write a program that shows the message “First fifteen
+// days of the month” if the date is less than 16th of the month
+// else shows “Last days of the month”.
+
+//solution:
+// var currentDate = new Date();
+// var date = currentDate.getDate();
+// console.log(date); 
+// console.log(typeof date); // this will return a Date in a Number form
+// if(date<16){
+//     alert("“First fifteen days of the month”");
+// }
+// else{
+//     alert("“Last days of the month”");
+// }
 
 
 //6. Write a program that determines the minutes since
@@ -264,3 +264,171 @@
 // }
 
 // loop(startNumber, EndNumber);
+
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+// var b = +prompt("Enter Base Value");
+// var p = +prompt("Enter Perpendicular Value");
+// var h;
+
+
+// function f1(b, p) {
+//     h = Math.pow(b, 2) + Math.pow(p, 2);
+//     console.log("Hypotenuse = ",h);
+
+//     function f2(h){
+//        console.log( Math.sqrt(h));
+//     }
+//     f2(h);
+// }
+// f1(b,p);
+
+
+
+// 9. Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+
+//solution:
+// var area;
+// var width = +prompt("Enter width");
+// var height = +prompt("Enter height");
+// function calculateArea(){
+//     area = width * height;
+//     console.log("Area of a Rectangle  = ",area);
+// }
+// calculateArea(width, height);
+
+
+
+// 10. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as
+// forward, e.g., madam
+
+//solution:
+// var check;
+// var palindrome = prompt("Enter a palindrome");
+// // console.log(palindrome);
+// var a = palindrome.split("");
+// a = a.reverse();
+// // console.log(a);
+
+// for(var i = 0;i<palindrome.length;i++){
+
+//     if(palindrome[i] == a[i]){
+//    check = true;
+//     }
+//     else{
+//         check = false;
+//     }
+// }
+// if (check == true) {
+//     console.log("It is a palindrome String");
+// }
+// if(check==false){
+//     console.log("It is Not a palindrome String");
+// }
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+
+
+
+// var palindrome = "Aun Ali";
+// console.log(palindrome.length);
+// for(i = 0;i<palindrome.length;i++){
+//     console.log(palindrome[i]);
+//     document.write(palindrome[i]);
+// }
+// console.log(palindrome.reverse());
+
+
+
+
+
+// var arr = ["Aun","Asim","khalid","Saim"];
+// for(i = 0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+// console.log(arr.reverse());
+
+
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+
+// var string = prompt("Enter String ");
+// console.log("Original String = ",string);
+// var stringToArray = string.split(" ");
+// console.log("String into Array = ",stringToArray);
+
+
+
+
+
+// for(var i=0;i<stringToArray.length;i++){
+//     stringToArray[i] = stringToArray[i].slice(0,1).toUpperCase() + stringToArray[i].slice(1);
+//                                 // or
+//     // stringToArray[i] = stringToArray[i].charAt(0).toUpperCase() + stringToArray[i].slice(1);
+// }
+// var arrayToString = stringToArray.join(" ");
+// console.log("After Capitalization = ",arrayToString);
+
+
+
+// 12. Write a JavaScript function that accepts a string as a
+// parameter and find the longest word within the string.
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development'
+
+//solution:
+
+function func() {
+    var word;
+    var a = prompt("Enter String");
+    console.log(a);
+    var arr = a.split(" ");
+    console.log(arr);
+
+    var min = 0;
+    for (var i = 0; i < arr.length; i++) {
+        //  console.log(arr[i].length);
+        if (arr[i].length > min) {
+            min = arr[i].length;
+            word = arr[i];
+        }
+    }
+    console.log(word);
+
+}
+func();
+
+
+// Practice
+//  var min = 0;
+//  var count= 0;
+//  var arr = [12, 5,31,17];
+//  for(var i=0;i<arr.length;i++){
+//      if(arr[i]>min){
+//          min = arr[i];
+//         }
+//         count ++;
+//  }
+// console.log(min);
+// console.log(count);
